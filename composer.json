@@ -1,0 +1,10 @@
+{
+    "name": "datlt/timezones",
+    "authors": [
+        {
+            "name": "Victor.Dat",
+            "email": "datlt@shipandplay.com"
+        }
+    ],
+    "require": {}
+}
