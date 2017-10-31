@@ -19,6 +19,8 @@ class TimezonesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/laraveldaily/timezones')
         ]);
+
+        include __DIR__ . '/routes.php';
     }
 
     /**
@@ -28,7 +30,6 @@ class TimezonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__ . '/routes.php';
         $this->app->make('Laraveldaily\Timezones\TimezonesController');
     }
 }
